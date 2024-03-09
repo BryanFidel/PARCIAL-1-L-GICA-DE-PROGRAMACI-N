@@ -14,6 +14,14 @@ namespace punto1
             double[] ventas = new double[3];
             double totalComisiones = 0;
             double totalVentas = 0;
+
+            for (int i = 0; i < ventas.Length; i++)
+            {
+                Console.Write("Ingrese el monto de la venta " + (i + 1) + ": ");
+                ventas[i] = Convert.ToDouble(Console.ReadLine());
+                totalVentas += ventas[i];
+                totalComisiones += ventas[i] * porcentajeComision;
+            }
         }
     }
 }
