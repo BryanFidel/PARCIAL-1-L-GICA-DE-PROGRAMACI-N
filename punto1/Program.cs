@@ -21,6 +21,19 @@ namespace punto1
                 ventas[i] = Convert.ToDouble(Console.ReadLine());
                 totalVentas += ventas[i];
                 totalComisiones += ventas[i] * porcentajeComision;
+
+                double totalMes = sueldoBase + totalComisiones;
+
+                double mayorComision = 0;
+                foreach (double venta in ventas)
+                {
+                    double comisionVenta = venta * porcentajeComision;
+                    if (comisionVenta > mayorComision)
+                    {
+                        mayorComision = comisionVenta;
+                    }
+                }
+
             }
         }
     }
