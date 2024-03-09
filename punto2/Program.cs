@@ -11,7 +11,7 @@ namespace punto2
             double velocidadPrimero = 80;
             double velocidadSegundo = 100;
 
-
+            double distanciaRecorrida = velocidadPrimero * tiempoPrimero.TotalHours;
         }
     }
 }
