@@ -15,6 +15,9 @@ namespace punto2
             double tiempoAlcance = distanciaRecorrida / (velocidadSegundo - velocidadPrimero);
 
             TimeSpan horaAlcance = TimeSpan.FromHours(tiempoAlcance) + tiempoPrimero;
+
+            TimeSpan horaSalida = TimeSpan.FromHours(10); 
+            TimeSpan horaAlcanceTotal = horaSalida + horaAlcance;
         }
     }
 }
