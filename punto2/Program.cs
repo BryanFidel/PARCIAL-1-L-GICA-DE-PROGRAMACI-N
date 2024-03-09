@@ -19,7 +19,7 @@ namespace punto2
             TimeSpan horaSalida = TimeSpan.FromHours(10); 
             TimeSpan horaAlcanceTotal = horaSalida + horaAlcance;
 
-            Console.WriteLine("El segundo tren alcanzará al primer tren a las: " + horaAlcanceTotal.ToString(@"hh\:mm") + " AM");
+            Console.WriteLine("El segundo tren alcanzará al primer tren a las: " + horaAlcanceTotal.ToString(@"hh\:mm") + " PM");
         }
     }
 }
