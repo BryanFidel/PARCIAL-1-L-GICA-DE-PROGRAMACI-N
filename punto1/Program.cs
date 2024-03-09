@@ -35,7 +35,18 @@ namespace punto1
             }
             double promedioComisiones = totalComisiones / ventas.Length;
 
+            bool superaObjetivo = totalVentas >= objetivoVentas;
+            double totalConBeneficio = totalMes;
+            if (superaObjetivo)
+            {
+                totalConBeneficio += beneficioExtra;
+                Console.WriteLine("¡Felicidades! Has superado el objetivo y ganaste un beneficio extra de $" + beneficioExtra);
             }
+            else
+            {
+                Console.WriteLine("No has superado el objetivo de ventas este mes.");
+            }
+
         }
     }
 }
