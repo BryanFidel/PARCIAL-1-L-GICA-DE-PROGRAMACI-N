@@ -6,7 +6,7 @@ namespace punto1
     {
         static void Main(string[] args)
         {
-            const double sueldoBase = 2000;
+            const double sueldoBase = 2001;
             const double porcentajeComision = 0.10;
             const double objetivoVentas = 1000000;
             const double beneficioExtra = 100000;
@@ -48,11 +48,11 @@ namespace punto1
 
             }
 
-            Console.WriteLine("Total por comisiones: $" + totalComisiones);
-            Console.WriteLine("Total recibido en el mes: $" + totalMes);
-            Console.WriteLine("La venta que generó la mayor comisión fue de: $" + mayorComision);
-            Console.WriteLine("El promedio de las comisiones por venta fue de: $" + promedioComisiones);
-            Console.WriteLine("El total recibido en el mes : $" + totalConBeneficio);
+            Console.WriteLine("\nTotal por comisiones: $" + totalComisiones);
+            Console.WriteLine("\nTotal recibido en el mes: $" + totalMes);
+            Console.WriteLine("\nLa venta que generó la mayor comisión fue de: $" + mayorComision);
+            Console.WriteLine("\nEl promedio de las comisiones por venta fue de: $" + promedioComisiones);
+            Console.WriteLine("\nEl total recibido en el mes : $ " + totalConBeneficio);
 
             Console.ReadLine();
         }
