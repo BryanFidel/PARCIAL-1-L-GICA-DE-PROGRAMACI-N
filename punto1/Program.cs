@@ -4,7 +4,7 @@ namespace punto1
 {
     internal class Program
     {
-        public void Main(string[] args)
+        static void Main(string[] args)
         {
             const double sueldoBase = 2000;
             const double porcentajeComision = 0.10;
@@ -45,8 +45,16 @@ namespace punto1
             else
             {
                 Console.WriteLine("No has superado el objetivo de ventas este mes.");
+
             }
 
+            Console.WriteLine("Total por comisiones: $" + totalComisiones);
+            Console.WriteLine("Total recibido en el mes: $" + totalMes);
+            Console.WriteLine("La venta que generó la mayor comisión fue de: $" + mayorComision);
+            Console.WriteLine("El promedio de las comisiones por venta fue de: $" + promedioComisiones);
+            Console.WriteLine("El total recibido en el mes : $" + totalConBeneficio);
+
+            Console.ReadLine();
         }
     }
 }
